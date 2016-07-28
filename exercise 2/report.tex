@@ -1,0 +1,214 @@
+\documentclass{article}
+\usepackage[LGR]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{C:/Users/spithas/Desktop/mcode/mcode}
+\usepackage[english, greek]{babel}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\title{ \textbf{ΕΠΙΣΤΗΜΟΝΙΚΟΣ ΥΠΟΛΟΓΙΣΜΟΣ Ι\\ 2η ΑΣΚΗΣΗ}}\selectlanguage{english} 
+\author{\textbf{Sp1thas}\\ 
+\href{mailto:sp1thas@autistici.org}{sp1thas@autistici.org}\\
+\date{Νοέμβριος 2014}
+
+\begin{document}
+\maketitle
+\cleardoublepage
+\selectlanguage{greek}
+\section*{Χαρακτηριστικά Συστήματος}
+Το σύστημα τρέχει \selectlanguage{english}Manjaro Linux (Arch Linux based) \selectlanguage{greek}με \selectlanguage{english}Kernel Linux 3.14.25-1, \selectlanguage{greek}επεξεργαστή \selectlanguage{english}Intel(R) Core(TM)2 Duo CPU P8600 @ 2.40Ghz. \selectlanguage{greek}\\Η ιεραρχία της μνήμης είναι δύο επιπέδων: \\Το πρώτο επίπεδο αποτελείται από δύο κρυφές μνήνες, η μία για \selectlanguage{english}data (L1 D-cache) \selectlanguage{greek}και η άλλη για \selectlanguage{english}instructions (L1 code cache) \selectlanguage{greek}και οι δύο των 32 ΚΒ με τα παρακάτω χαρακτηριστηκά \selectlanguage{english}L1 assoc: 8-way, \selectlanguage{greek}και \selectlanguage{english}64 byte line size \selectlanguage{greek}και για τις δύο. \\Η κύρια μνήμη \selectlanguage{english}(L2 cache) \selectlanguage{greek}έχει μέγεθος 3072 \selectlanguage{english}KB, L2 assoc: 12-way \selectlanguage{greek}και \selectlanguage{english}64 byte line size.\selectlanguage{greek}
+\\Χρησιμοποιώ το λογισμικό: \selectlanguage{english} MATLAB R2013a (8.1.0.604) 64-bit (glnxa64)
+\selectlanguage{greek}
+\\Η διακριτότητα του χρονομετρητή  μέσω των εντολών 
+\selectlanguage{english} tic,toc  \selectlanguage{greek} είναι:
+\selectlanguage{english} $ 3.43*10^{-9} sec. $
+\selectlanguage{greek}\\Το αποτέλεσμα της εντολής   \selectlanguage{english} bench  \selectlanguage{greek} για την διάσπαση μητρώων  \selectlanguage{english}LU \selectlanguage{greek}  είναι 0.2293 \selectlanguage{english} sec. \selectlanguage{greek} 
+\\Το σύστημα δεν χρησιμοποιεί εντολές \selectlanguage{english} FMA.\selectlanguage{greek}
+\section*{Ερώτημα 1 - Πράξεις με Πολυώνυμα}
+\subsection*{(α')}
+\selectlanguage{english}
+\textbf{poly:} \selectlanguage{greek}
+Λαμβάνει ως όρισμα ένα διάνυσμα, τις τιμές του οποίου τις θεωρούμε ρίζες ενός πολυωνύμου και η συνάρτηση μας επιστρέφει διάνυσμα με τους συντελεστές του πολυωνύμου με ρίζες το δοθέν διάνυσμα.\\
+Η λογική του αλγορίθμου αποτυπώνεται στις γραμμές 39 εως 41 όπου σε μια επανάληψη για \selectlanguage{english} j = 1 \selectlanguage{greek}εως \selectlanguage{english}n \selectlanguage{greek}όπου στις θέσεις 2 εως \selectlanguage{english}j+2 \selectlanguage{greek} του διανύσματος\selectlanguage{english} c \selectlanguage{greek}καταχωρείται η διαφορά του στοιχείου \selectlanguage{english}e(j) \selectlanguage{greek}επί το διάνυσμα \selectlanguage{english} c(1:j)\selectlanguage{greek}με το αρχικοποιημένο διάνυσμα \selectlanguage{english}c.\\
+\textbf{polyval:}
+\selectlanguage{greek} Δέχεται ως πρώτο όρισμα ένα διάνυσμα με τους συντελεστές του πολυωνύμου και ως δεύτερο όρισμα μια τιμή ή μια σειρά από τιμές. Η συνάρτηση μας επιστρέφει προσεγγιστικά την τιμή του πολυωνύμου (διάνυσμα συντελεστών του πολυωνύμου) για τις τιμές που δώσαμε με χρήση \selectlanguage{english} Horner.\\\selectlanguage{greek}
+Η λογική του αλγορίθμου αποτυπώνεται στις γραμμές 97 εως 99 όπου σε μια επανάληψη για \selectlanguage{english} j = nc-1 \selectlanguage{greek}εως 1 με βήμα -1 πολλαπλασιάζει το $x$ με κάθε στοιχείο της στήλης \selectlanguage{english}j+1 \selectlanguage{greek} του μητρώου \selectlanguage{english}V.
+\selectlanguage{greek}
+
+\subsection*{(β')}
+\selectlanguage{english}
+\subsubsection*{(i)}
+\selectlanguage{greek} Το αρχείο με τον κώδικα υλοποίησης είναι το \selectlanguage{english}erotima1bi \selectlanguage{greek} Οι συντελεστές καταχωρούνται σε μητρώο, όπου κάθε γραμμή του περιέχει τους συντελεστές για κάθε διαφορετικό \selectlanguage{english} n \selectlanguage{greek}. Οι συντελεστές που προκύπτουν είναι φαίνονται στο μητρώο \selectlanguage{english} results\selectlanguage{greek} που προκύπτει. Για κάθε τιμή του \selectlanguage{english} n\selectlanguage{greek} οι συντελεστές του πολυωνύμου είναι σε πλήθος \selectlanguage{english}n+2\selectlanguage{greek} επομένως στο μητρώο οπου καταχωρώ την τιμή \selectlanguage{english} NaN\selectlanguage{greek} σημαίνει οτι οι συγκεκριμένες θέσεις "περισσεύουν" για το αντίστοιχο πολυώνυμο.
+\selectlanguage{english}
+\subsubsection*{(ii)}
+\selectlanguage{greek}Στον παρακάτω πίνακα φαίνονται οι τιμές των πολυωνύμων που επιστρέφει η \selectlanguage{english}polyval \selectlanguage{greek}για \selectlanguage{english} x = 1 \selectlanguage{greek}και \selectlanguage{english} x = n
+\selectlanguage{english}
+\begin{center}
+ \begin{tabular}{ | l | l | l |}
+    \hline
+     & x = $1$ & x = n\\ \hline
+    n = 15 & $0$ & $0$\\ \hline
+    n = 17 & $0$ & $0$\\ \hline
+    n = 19 & $0$ & $633881344$\\\hline
+    n = 21 & $0$ & $233242933690368$\\\hline
+    n = 23 & $-25165824$ & $7.91249*10^{18}$\\\hline
+    n = 25 & $8589934592.00000$ & $-6.58109*10^{23}$\\\hline
+    \end{tabular}
+    \end{center}
+\selectlanguage{greek}
+Θεωρητικά οι τιμές που θα έπρεπε να παίρνουμε για \selectlanguage{english}x=1 \selectlanguage{greek}και \selectlanguage{english}x = n\selectlanguage{greek} θα έπρεπε να είναι πάντα το μηδέν αφού οι συγκεκριμένες τιμές αποτελούν ρίζες του πολυωνύμου κάθε φορά. Αυτό που παρατηρώ είναι οτι μέχρι τον 21ο βαθμό το πολυώνυμο για \selectlanguage{english}x = 1\selectlanguage{greek} επιστρέφει μηδενικά ενώ μετά τιμές πολύ μεγάλες. Αυτό συμβαίνει διότι όσο αυξάνεται ο βαθμός τόσο αυξάνονται οι πράξεις και μεταφέρονται σφάλματα βγάζοντας έτσι "λάθος" αποτελέσματα. Για \selectlanguage{english}x = n \selectlanguage{greek}τώρα παρατηρούμε οτι η συνάρτηση \selectlanguage{english}polyval \selectlanguage{greek}επιστρέφει μηδενικά μέχρι τον 17ο βαθμό του πολυωνύμου ενώ για μεγαλύτερους βαθμούς βλέπουμε οι αριθμοί να είναι ανεξήγητα μεγάλοι. Η αιτία είναι η ίδια με παραπάνω μόνο που εδώ οι πράξεις γίνονται με πολύ μεγαλύτερους αριθμούς (αφού \selectlanguage{english}x = n \selectlanguage{greek}) πράγμα το οποίο κάνει το αποτέλεσμα να "χαλάει" ακόμα και από τον 19ο βαθμό του πολυωνύμου.\selectlanguage{english}
+\subsubsection*{(iii)} \selectlanguage{greek}
+Οι ρίζες που επιστρέφει η \selectlanguage{english} roots \selectlanguage{greek} σε σχέση με τις πραγματικές ρίζες των πολυωνύμων φαίνεται στην παρακάτω γραφική παράσταση:\\
+Παρατηρούμε όσο το \selectlanguage{english} n 
+\selectlanguage{greek} είναι μικρότερο από 21 η διαφορά στις τιμές δεν είναι όρατές, όταν όμως ο βαθμός του πολυωνύμου είναι πάνω από 21ο τότε παρατηρούμε οτι οι τιμές αρχίζουν να έχουν και φανταστικό μέρος και να αποκλείνουν ακόμα περισσότερο από τις πραγματικές ρίζες. Αυτό οφείλεται στο ότι οσο αυξάνεται ο βαθμός του πολυονύμου τόσο περισσότερες πράξεις εκτελούνται με συνέπεια η μεταφορά των σφαλμάτων να δημιουργούν ακόμα μεγαλύτερο σφάλμα στο τελικό αποτέλεσμα. 
+\section*{Ερώτημα 2 - Αθροίσματα - Μονάδα Στρογγύλευσης}
+\subsection*{(α')}
+Κάθε τρόπος άθροισης υλοποιείται με μια συνάρτηση που έχει όνομα της μορφής \selectlanguage{english}function2a\selectlanguage{greek} και κατάληξη το αντίστοιχο ερώτημα
+\selectlanguage{english}
+\subsubsection*{(i)}
+\selectlanguage{greek}Η συνάρτηση \selectlanguage{english} \textbf{function2ai} \selectlanguage{greek} υλοποιεί την πρόσθεση με τον τρόπο που περιγράφει το ερώτημα παίρνοντας ως όρισμα ένα διάνυσμα όπως περιγράφονται στο ερώτημα (β').\selectlanguage{english}
+\subsubsection*{(ii)}
+\selectlanguage{english} \textbf{function2aii}  \selectlanguage{greek}η αντίστοιχη συνάρτηση υλοποίησης.\selectlanguage{english}
+\subsubsection*{(iii)}\textbf{fuction2aiii} \selectlanguage{greek} η αντίστοιχη συνάρτηση υλοποίησης.\selectlanguage{english}
+\subsubsection*{(iv)}\selectlanguage{english}\textbf{function2aiv} \selectlanguage{greek} η αντίστοιχη συνάρτηση με βάση τον κώδικα που έχει δωθεί (ο οποίος είναι τροποποιημένος).
+\selectlanguage{greek}
+\subsection*{(β')}
+Η παραγωγή του κατάλληλου διανύσματος εισόδου παράγεται από συνάρτηση \selectlanguage{english}function2b\selectlanguage{greek}(και κατάληξη το αντίστοιχο ερώτημα) που καλείται μέσα στο \selectlanguage{english}script.\selectlanguage{greek}Όλα τα ζητούμενα του ερωτήματος 2 υπολογίζονται στο \selectlanguage{english}script\selectlanguage{greek} με όνομα \selectlanguage{english}erotima2.m \selectlanguage{greek} με την βοήθεια συναρτήσεων που έχω υλοποιήσει για κάθε ερώτημα.
+Τα αποτελέσματα καταχωρούνται σε ένα μητρώο\selectlanguage{english} 4\selectlanguage{english}x4\selectlanguage{greek},\selectlanguage{greek} με τον εξής τρόπο:\\
+\begin{center}
+ \begin{tabular}{ | l | l | l | l | l |}
+    \hline
+     & 1ος τρόπος άθροισης & 2ος τρόπος άθρ. & 3ος τρόπος άθρ. & 4ος τρόπος άθρ.\\\hline
+1η είσοδος & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\\hline
+2η είσοδος & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\\hline
+3η είσοδος & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\\hline
+4η είσοδος & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\\hline
+\end{tabular}
+\end{center}
+\selectlanguage{greek}
+Με βάση τα διανύσματα εισόδου που μας περιγράφουν τα ερωτήματα (β')\selectlanguage{english} (i), (ii), (iii) \selectlanguage{greek} και \selectlanguage{english}(iv) \selectlanguage{greek} τα αποτελέσματα των πράξεων του υποερωτήματος (α') παρουσιάζονται στον παρακάτω πίνακα:
+\begin{center}
+ \begin{tabular}{ | l | l | l | l | l |}
+    \hline
+     \selectlanguage{english}(format long)\selectlanguage{greek} & 1ος τρόπος άθροισης & 2ος τρόπος άθρ. & 3ος τρόπος άθρ. & 4ος τρόπος άθρ.\\\hline
+1η είσοδος & $0.000001867442732$ & $0.000001867442732$ & $0.000001867442732$ & $0.000001867442732$\\\hline
+2η είσοδος & $-0.030563436343082$ & $-0.030563436343082$ & $-0.030563436343082$ & $-0.030563436343082$\\\hline
+3η είσοδος & $6.144000000000005$ & $6.144000000000005$ & $6.144000000000005$ & $6.144000000000000$\\\hline
+4η είσοδος & $0.001644689956023$ & $0.001644689956023$ & $0.001644689956023$ & $0.001644689956023$\\\hline
+\end{tabular}
+\end{center}
+\subsection*{(γ')}
+Για τον σχολιασμό των αποτελεσμάτων ως προς την απόκλιση της κάθε μεθόδου ή της κάθε εισόδου θα υπολογίσω το εμπρός σχετικό σφάλμα για όλους του συνδυασμούς εισόδων και τρόπων άθροισης. Ως θεωρητικό αποτέλεσμα θα θεωρούμε κάθε φορά το αποτέλσμα που προκύπτει από πράξεις στοιχείων με διπλή ακρίβεια.
+Γνωρίζουμε από την θεωρία ότι το εμπρός σφάλμα ορίζεται ώς $\frac{\left \| x^\ast - x \right \|}{\left \| x \right \|}$, όπου $x^\ast$ είναι το θεωρητικό αποτέλεσμα και $x$ το αποτέλεσμα της υπολοίησης.
+\begin{center}
+ \begin{tabular}{ | l | l | l | l | l |}
+    \hline
+     & 1ος τρόπος άθροισης & 2ος τρόπος άθρ. & 3ος τρόπος άθρ. & 4ος τρόπος άθρ.\\\hline
+1η είσοδος & $4.6312*10^{-4}$ & $0.0541$ & $4.6312*10^{-4}$ & $0.0017$\\\hline
+2η είσοδος & $1.3159*10^{-6}$ & $1.3159*10^{-6}$ & $1.3159*10^{-6}$ & $5.4018*10^{-9}$\\\hline
+3η είσοδος & $2.8610*10^{-6}$ & $2.8610*10^{-6}$ & $2.8610*10^{-6}$ & $0$\\\hline
+4η είσοδος & $2.1504*10^{-6}$ & $2.3384*10^{-8}$ & $2.1504*10^{-5}$ & $2.3384*10^{-8}$\\\hline
+\end{tabular}
+\end{center}
+\selectlanguage{greek}Μια γενική παρατήρηση μου μπορούμε να κάνουμε είναι οτι οι μεγαλύτερες αποκλίσεις παρατηρούνται στις πράξεις με την πρώτη είσοδο (το ανάπτυγμα της σειράς \selectlanguage{english} taylor\selectlanguage{greek}) αφού τα σφάλματα είναι της τάξης του $10^{-4}$ μέχρι όμως και της τάξης του $10^{-2}$. Για τις υπόλοιπες εισόδους παρατηρώ οτι τα σφάλματα των πράξεων εξομαλίνονται αφού μειώνονται στην τάξη του $10^{-5}$, $10^{-6}$ και $10^{-8}$ ενώ φτάνοουν και στο μηδέν ( στην περίπτωση της 3ης ειδόδου όπου οι πράξεις εκτελούνται με τον 4ο τρόπο. Τα μικρότερα σφάλματα μπορούμε να πούμε οτι εξάγει ο 4ος τρόπος άθροισης που πέρα από την ιδιαιτερότητα του διανύσματος \selectlanguage{english}Taylor\selectlanguage{greek} έχει πολύ μικρά εως μηδαμινά σφάλματα.
+\section*{Ερώτημα 3 - Γραμμικά Συστήματα}
+\subsection*{Μέρος Α}
+\subsubsection*{(α') \selectlanguage{english}(i)} \selectlanguage{greek}
+\selectlanguage{greek}
+Το αρχείο με όνομα: \selectlanguage{english}function3Aai\selectlanguage{greek} αποτελεί συνάρτηση με είσοδο ένα μητρώο η οποία υπολογίζει τον δείκτη κατάστασης του. Ως προς νόρμα μεγίστου έχουμε πάρει τη νόρμα απείρου. Οι δείκτες κατάστασης των μητρώων φαίνονται στον παρακάτω πίνακα.
+\begin{center}
+ \begin{tabular}{ | l | l |}
+    \hline
+     & δείκτης κατάστασης\\ \hline
+    ερώτημα 1. & $93903.3007770663$\\ \hline
+    ερώτημα 2. & $7.26361*10^{22}$\\ \hline
+    ερώτημα 3. & $43129.21962$\\\hline
+    ερώτημα 4. & $512$\\\hline
+    ερώτημα 5\selectlanguage{english}(i). & $3.66088*10^{224}$\\\hline
+    \selectlanguage{greek}ερώτημα 5\selectlanguage{english}(ii). & $2.32861*10^{156}$\\\hline
+    \end{tabular}
+    \end{center}\selectlanguage{greek}
+Κατά την διάρκεια του υπολογισμού του δείκτη κατάστασης εμφανίζονται προειδοποιήσεις της μορφής:\\
+\selectlanguage{english}\textsf{
+\textcolor{orange}{
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND\\
+=  6.538312e-22.\\
+  In cond at 47\\
+  In function3Aai at 3\\
+  In erotima3A at 15}}\\
+\selectlanguage{greek}Αυτή η προειδοποίηση κατά τον υπολογισμό του δείκτη κατάστασης, εμφανίζεται για το   μητρώο του ερωτήματος 2. αλλά και στα δύο μητρώα του ερωτήματος 5. πράγμα που σημαίνει οτι τα συγκεκριμένα μητρώα είναι "κακώς" ορισμένα δηλαδή σε παρακάτω υπολογισμούς του προβλήματος τα συγκεκριμένα μητρώα δεν θα μας επιστέφουν τις αναμενόμενες τιμές. Επίσης αυτό φαίνεται και από τον δείκτη κατάστασης αυτών των μητρώων που είναι πολύ μεγάλος.\selectlanguage{english}
+\subsubsection*{(ii)}
+\selectlanguage{greek}
+Το αρχείο με όνομα: \selectlanguage{english}function3Aaii\selectlanguage{greek} αποτελεί συνάρτηση με είσοδο ένα μητρώο και ένα διάνυσμα η οποία υπολογίζει το εμπρός σχετικό σφάλμα της επίλυσης του συστήματος\selectlanguage{english} Ax=b.\selectlanguage{greek} \\Τα εμπρός σχετικά σφάλματα φαίνονται στον παρακάτω πίνακα.
+\begin{center}
+ \begin{tabular}{ | l | l |}
+    \hline
+     & εμπρος σχ. σφάλμα\\ \hline
+    ερώτημα 1. & $1.7364*10^{-13}$\\ \hline
+    ερώτημα 2. & $1.5682*10^{123}$\\ \hline
+    ερώτημα 3. & $1.5943*10^{-13}$\\\hline
+    ερώτημα 4. & $1$\\\hline
+    ερώτημα 5\selectlanguage{english}(i). & $5.0665*10^{205}$\\\hline
+    \selectlanguage{greek}ερώτημα 5\selectlanguage{english}(ii). & $1.5777*10^{137}$\\\hline
+    \end{tabular}
+    \end{center}
+    \selectlanguage{english}
+\subsubsection*{(iii)}
+\selectlanguage{greek}
+Το αρχείο με όνομα: \selectlanguage{english}function3Aaiii\selectlanguage{greek} αποτελεί συνάρτηση με είσοδο ένα μητρώο και ένα διάνυσμα η οποία υπολογίζει το πίσω σφάλμα της επίλυσης του συστήματος\selectlanguage{english} Ax=b.\selectlanguage{greek} \\Τα πίσω σφάλματα φαίνονται στον παρακάτω πίνακα.
+\begin{center}
+ \begin{tabular}{ | l | l |}
+    \hline
+     & εμπρός σχ. σφάλμα\\ \hline
+    ερώτημα 1. & $1.5813*10^{-16}$\\ \hline
+    ερώτημα 2. & $1.1064*10^{-23}$\\ \hline
+    ερώτημα 3. & $1.2405*10^{-16}$\\\hline
+    ερώτημα 4. & $0.4481$\\\hline
+    ερώτημα 5ι. & $3.5228*10^{-19}$\\\hline
+    ερώτημα 5ιι. & $1.0165*10^{-18}$\\\hline
+    \end{tabular}
+    \end{center}
+    
+\subsection*{(β')}
+Για να συμφωνούν τα αποτελέσματα για τα σφάλματα με τις θεωρητικές προβλέψεις (φράγματα) θα πρέπει ουσιαστικά για κάθε περίπτωση επίλυσης να ισχύει: φράγμα $<$ (εμπρός σφαλμα), όπου φράγμα είναι ίσο με το (πίσω σφάλμα)*(δείκτη κατάστασης). Στον κώδικα κάνω τη σύγκριση και παρατηρώ ότι όλα τα αποτελέσματα συμφωνούν με τις θεωρητικές προβλέψεις εκτός από το μητρώο του ερωτήματος 2. κάτι το οποίο δικαιολογείται αφού είναι ένα "κακώς" ορισμένο μητρώο όπως εξηγήσαμε και στο παραπάνω ερώτημα.
+\selectlanguage{greek}
+\subsection*{Μέρος Β}
+\subsubsection*{(α')}
+Στο αρχείο με όνομα \selectlanguage{english} erotima3B \selectlanguage{greek} υπάρχει ο κώδικας για την δημιουργία των ζητούμενων διανυσμάτων του ερωτήματος.
+\subsubsection*{(β')}
+Η συνάρτηση με όνομα \selectlanguage{english} function3Bb \selectlanguage{greek} υπολογίζει το εμπρός σφάλμα του πολλαπλασιασμού των μητρώων και για τις δύο μεθόδους (\selectlanguage{english}Strassen \selectlanguage{greek} και \selectlanguage{english} mtimes\selectlanguage{greek}). Η συνάρτηση δέχεται τρία ορίσμα, το πρώτο είναι η "θεωρητικό" αποτέλεσμα (\selectlanguage{english} mtimes \selectlanguage{greek} με διπλή ακρίβεια ) το δεύτερο όρισμα είναι ο υπολογισμός με την μέθοδο \selectlanguage{english} mtimes \selectlanguage{greek} και το τρίτο όρισμα είναι ο υπολογισμός με την μέθοδο \selectlanguage{english} Strassen.\\\selectlanguage{greek}
+Με την μέθοδο \selectlanguage{english} mtimes \selectlanguage{greek} το εμπρός σχετικό σφάλμα που υπάρχει είναι:
+\begin{center}
+ \begin{tabular}{ | l | l |}
+    \hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(i) & $9.9448*10^{-8}$ \\\hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(ii) & $7.7943*10^{-8}$\\\hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(iii) & $2.3496*10^{-8}$\\\hline
+\end{tabular}
+\end{center}
+\selectlanguage{greek}
+Με αυτή την μέθοδο παρατηρούμε οτι το εμπρός σχετικό σφάλμα είναι της τάξης του $10^{-8}$.\\
+Με την μέθοδο \selectlanguage{english} Strassen \selectlanguage{greek} το εμπρός σχετικό σφάλμα που υπάρχει είναι:
+\begin{center}
+ \begin{tabular}{ | l | l |}
+    \hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(i) & $1.6804*10^{-6}$ \\\hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(ii) & $8.9107*10^{-7}$\\\hline
+\selectlanguage{greek}ερώτημα \selectlanguage{english}(iii) & $7.8716*10^{-5}$\\\hline
+\end{tabular}
+\end{center}
+\selectlanguage{greek}
+Παρατηρούμε οτι τα σφάλματα με την μέθοδο \selectlanguage{english}strassen \selectlanguage{greek}είναι και μεγαλύτερα και έχουν και μεγαλύτερη απόκλιση μεταξύ του σε σχέση με την μέθοδο \selectlanguage{english}mtimes.\selectlanguage{greek}
+\subsubsection*{(γ')}
+Τα σφάλματα που εξάγει η μέθοδος \selectlanguage{english}Strassen \selectlanguage{greek}είναι σαφώς πιο μεγάλα σε σχέση με την μέθοδο \selectlanguage{english}mtimes\selectlanguage{greek} που έχει πολύ μικρότερα σφάλματα και με μικρές διαφορές σε σχέση με τις διαφορετικές εισόδους.
+\end{document}
