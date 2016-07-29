@@ -1,8 +1,6 @@
-#Digital Communication Exercises
+# Digital Communication Exercises
 
-##Tools:
-- [Matlab](https://www.mathworks.com/products/matlab/)
+## Tools:
 
-
-
+## ![](http://astro.temple.edu/~tuf66045/CIS2033/matlab_logo.jpg)
 
