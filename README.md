@@ -8,7 +8,7 @@
    
    ![](https://eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png) 
 |   exrcise  |       object          |
-|------------|_______________________|
+|------------|-----------------------|
 | exercice 1 | bash program          |
 | exercise 2 | changes on minix core |
 | exercise 3 | changes on minix core |
