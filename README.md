@@ -6,17 +6,8 @@
    ![](https://tiswww.case.edu/php/chet/img/bash-logo-web.png) 
    ![](https://eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png) 
 
-| 0:ghjhgj | 1:0 |
-| -- | -- |
-| 0:2 | 1:2 |
-| 0:3 | 1:3 |
-| 0:4 | 1:4 |
-
-####exercise 1:
-bash program
-####exercise 2:
-changes on minix core
-####exercise 3:
-changes on minix core
-####exercise 4:
-about minix structure
+| exercice 1 | bash program          |   |   |   |
+|------------|-----------------------|---|---|---|
+| exercise 2 | changes on minix core |   |   |   |
+| exercise 3 | changes on minix core |   |   |   |
+| exercise 4 | about minix structure |   |   |   |
