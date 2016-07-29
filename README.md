@@ -7,7 +7,7 @@
    ![](https://tiswww.case.edu/php/chet/img/bash-logo-web.png) 
    
    ![](https://eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png) 
-|   exrcise  |       object          |
+|  exercise  |         object        |
 |------------|-----------------------|
 | exercice 1 | bash program          |
 | exercise 2 | changes on minix core |
