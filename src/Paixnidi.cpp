@@ -38,13 +38,13 @@ if ((M.MX==(DimX/2)||M.MX==((DimX/2)+1))&&(M.MY==1))
 
         Team1.goals++;
 
-        cout<<string(Team1.TeamName.size()+20, '-')<<"ΓΚΟΛ για την ομάδα: "<<Team1.TeamName<<" !\n";
+        cout<<string(Team1.TeamName.size()+20, '-')<<Team1.TeamName<<"scored !\n";
 }
     else if ((M.MX==(DimX/2)|| M.MX==((DimX/2)+1))&&(M.MY==DimY))
 {
 
         Team2.goals++;
-        cout<<string(Team1.TeamName.size()+20, '-')<<"ΓΚΟΛ για την ομάδα: "<<Team2.TeamName<<" !\n";
+        cout<<string(Team1.TeamName.size()+20, '-')<<Team2.TeamName<<"scored !\n";
     }
 
    if(Rounds<GameRounds)
@@ -62,7 +62,7 @@ if ((M.MX==(DimX/2)||M.MX==((DimX/2)+1))&&(M.MY==1))
    else if (Rounds==GameRounds)
     {
        cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
-       cout<<string((Team1.TeamName.size()+Team2.TeamName.size()+4)/4, ' ')<<"ΤΕΛΙΚΟ SCORE\n";
+       cout<<string((Team1.TeamName.size()+Team2.TeamName.size()+4)/4, ' ')<<"FINAL SCORE\n";
        cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
        cout<<" "<<Team1.TeamName<<"  "<<Team2.TeamName<<" \n";
        cout<<string(Team1.TeamName.length()/2, ' ')<<Team1.goals<<string((Team1.TeamName.size()+Team2.TeamName.size()/2), ' ')<<Team2.goals<<endl;

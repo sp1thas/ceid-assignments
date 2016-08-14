@@ -14,7 +14,7 @@ Paikths::Paikths()
         PY= rand() % 6  ;
         int arithmosfan = rand() % 100 ;
 
-        cout<<"Εισάγετε το όνομα του παίκτη\n-> ";
+        cout<<"Insert player's name\n-> ";
         cin>>PlayerName;
 
 }
@@ -26,14 +26,14 @@ int Paikths :: Metakinhsh (int PX , int DimX) {
         PX=rand() % DimX ; //tyxaia metakinhsh ston aksona x
     }
 
-    cout<<"Ο παίκτης κινείται και οι συντεταγμένες του είναι: "<<PX <<", " <<PY<<endl;
+    cout<<"Player moving.. His current coordinates are: "<<PX <<", " <<PY<<endl;
 
     return 0 ;
 };
 
 int Paikths:: Metabibash (){
 
-cout<<"Συνάρτηση μεταβίσασης..."<<endl;
+cout<<"Transfer function..."<<endl;
 
 return 0;
 
@@ -42,7 +42,7 @@ return 0;
 int Paikths ::EidikhKin () {
 
 
-cout<<"Εκτέλεση ειδικής κίνησης... "<<endl;
+cout<<"Special move action "<<endl;
 
 return 0;
 };

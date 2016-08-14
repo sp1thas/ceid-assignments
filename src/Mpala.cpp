@@ -15,7 +15,7 @@ Mpala::Mpala()
 
 int Mpala ::Anathesh (Paikths P, Mpala M) {
 
-cout << "Συνάρτηση ανάθεσης..." << endl;
+cout << "Assignation function" << endl;
 
 if ((M.MX -P.PX<2)&&(M.MY-P.PY<2))//Orizoume oti gia na parei th mpala tha prepei na nai sxetika konta
     {
@@ -23,7 +23,7 @@ if ((M.MX -P.PX<2)&&(M.MY-P.PY<2))//Orizoume oti gia na parei th mpala tha prepe
 M.MX=P.PX; //anathesh syntetagmenwn paikth sth mpala
 M.MY=P.PY;
 trexwn=&P;
-cout << "Ο " << P.PlayerName << " έχει στην κατοχή του την μπάλα..." << endl;
+cout << "Ο " << P.PlayerName << " has the ball in his possession" << endl;
 
 }
  return 0 ;

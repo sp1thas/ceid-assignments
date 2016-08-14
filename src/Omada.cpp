@@ -10,32 +10,32 @@ using namespace std;
 Omada::Omada()
 {
 
-cout<<"Εισάγετε το όνομα της ομάδας σας...\n->  "<<endl;
+cout<<"Insert the name of your team\n->  "<<endl;
         cin>>TeamName ;
-        cout<<"Το όνομα της ομάδας σας είναι: "<<TeamName <<endl;
+        cout<<"Your team's name:  "<<TeamName <<endl;
 }
 
 
 int Omada ::Action (int DimX , Mpala M){
-    cout<<"Ξεκινάει το παιχνίδι!"<<endl;
+    cout<<"Game starting!"<<endl;
     for (int i=0 ; i=2 ; i ++ ){
       int x = rand() % 100 ; //tyxaios arithmos ews 100 gia na prosomeiwsoume tis pithanothtes
       M.Anathesh(Paik[i],M); //kaloume thn synarthsh anatheshs gia kathe paikth
 
       if (x>70) {
-        cout<<"Μετακίνηση"<<endl;
+        cout<<"Moving"<<endl;
         Paik[i].Metakinhsh(3,DimX);
         break;
       }
 
       else if (x>35) {
-        cout<<"Μεταβίσαση"<<endl;
+        cout<<"Transfer"<<endl;
         Paik[i].Metabibash();
         break;
       }
 
       else {
-        cout<<"Ειδική κίνηση"<<endl;
+        cout<<"Special move"<<endl;
         Paik[i].EidikhKin();
         break;
       }

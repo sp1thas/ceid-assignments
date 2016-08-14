@@ -12,13 +12,13 @@ int main()
     int GameRounds ;
     string synexise ;
 
-    cout <<"Εισάγετε των αριθμό γύρων του παιχνιδιού...\n-> ";
+    cout <<"Insert the number of rounds\n-> ";
     cin>>GameRounds ;
 
     int DimX = 6 ; // Oria toy ghpedoy
     int DimY = 6 ;
     int i,j;
-    cout << "Οι διαστάσεις του γηπέδου είναι: " << DimX << " x " << DimY << endl;
+    cout << "Playing field dimensions: " << DimX << " x " << DimY << endl;
 
     Paixnidi P; //Dhmiourgia antikeimenou paixnidi
     P.Rounds = 0 ;
@@ -27,11 +27,11 @@ int main()
     do {   //domh epanalhpshss gia thn ektelesh ths run turn
 
         P.Rounds += 1 ;
-        cout <<"Γύρος: "<< P.Rounds <<endl;
+        cout <<"Round: "<< P.Rounds <<endl;
 
         P.RunTurn(DimX,DimY,GameRounds);
 
-        cout<<"για συνέχεια δώστε enter...\n";
+        cout<<"Press Enter to continue\n";
         cout<<"---------------------------\n---------------------------\n\n\n";
         cin.ignore();
         for(i=0; i++; i<=5){
@@ -43,7 +43,7 @@ int main()
 
 
     while ( P.Rounds < GameRounds ) ;
-    cout<<"---------------------------\n    ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ      \n---------------------------\n";
+    cout<<"---------------------------\n    GAME OVER      \n---------------------------\n";
 
     return 0 ;
 }
