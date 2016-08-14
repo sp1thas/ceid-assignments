@@ -10,8 +10,6 @@ using namespace std;
 int main()
 {
     int GameRounds ;
-    string synexise ;
-
     cout <<"Insert the number of rounds\n-> ";
     cin>>GameRounds ;
 
@@ -20,16 +18,16 @@ int main()
     int i,j;
     cout << "Playing field dimensions: " << DimX << " x " << DimY << endl;
 
-    Paixnidi P; //Dhmiourgia antikeimenou paixnidi
-    P.Rounds = 0 ;
+    Paixnidi Game; //dimiourgia antikeimenou
+    Game.Rounds = 0 ;
 
     Mpala M;
     do {   //domh epanalhpshss gia thn ektelesh ths run turn
 
-        P.Rounds += 1 ;
-        cout <<"Round: "<< P.Rounds <<endl;
+        Game.Rounds += 1 ;
+        cout <<"Round: "<< Game.Rounds <<endl;
 
-        P.RunTurn(DimX,DimY,GameRounds);
+        Game.RunTurn(DimX,DimY,GameRounds);
 
         cout<<"Press Enter to continue\n";
         cout<<"---------------------------\n---------------------------\n\n\n";
@@ -42,7 +40,7 @@ int main()
    }
 
 
-    while ( P.Rounds < GameRounds ) ;
+    while ( Game.Rounds < GameRounds ) ;
     cout<<"---------------------------\n    GAME OVER      \n---------------------------\n";
 
     return 0 ;

@@ -11,8 +11,8 @@ Omada::Omada()
 {
 
 cout<<"Insert the name of your team\n->  "<<endl;
-        cin>>TeamName ;
-        cout<<"Your team's name:  "<<TeamName <<endl;
+        cin>>Name ;
+        cout<<"Your team's name:  "<<Name <<endl;
 }
 
 

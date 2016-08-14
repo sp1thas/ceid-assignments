@@ -9,18 +9,16 @@ using namespace std;
 class Paikths
 {
     public:
-        Paikths();
+        Paikths(); // constractor
 
+        int PlayerAxisX ; // h grammh pou einai o Paikths
+        int PlayerAxisY ; // h sthlh pou einai o Paikths
+        string PlayerName ; // onoma paikth
+        int FansCount; // arithmos Fan
+        int MovingLine ; // h grammh sthn opoia koineitai o Paikths
+        int TargetLine ; //grammh stoxos
 
-        int PX ; // syntetgmenes x toy paikth
-        int PY ; // syntetagmenes y toy paikth
-
-        string PlayerName ;
-        int arithmosfans;
-        int grkin ; //grammh kinhshs
-        int grst ; //grammh stoxos
-
-        int Metakinhsh (int PX , int Oriox) ;
+        int Metakinhsh (int PlayerAxisX , int DimX) ;
         int Metabibash ();
         int EidikhKin () ;
 

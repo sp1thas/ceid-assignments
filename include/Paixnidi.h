@@ -12,10 +12,9 @@ class Paixnidi
 {
     public:
 
-        Paixnidi();
+        Paixnidi(); //
 
         int Rounds,i,j ;
-
         int RunTurn ( int DimX,int DimY,int Rounds) ;
 };
 

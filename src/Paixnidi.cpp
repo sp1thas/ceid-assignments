@@ -38,35 +38,35 @@ if ((M.MX==(DimX/2)||M.MX==((DimX/2)+1))&&(M.MY==1))
 
         Team1.goals++;
 
-        cout<<string(Team1.TeamName.size()+20, '-')<<Team1.TeamName<<"scored !\n";
+        cout<<string(Team1.Name.size()+20, '-')<<Team1.Name<<"scored !\n";
 }
     else if ((M.MX==(DimX/2)|| M.MX==((DimX/2)+1))&&(M.MY==DimY))
 {
 
         Team2.goals++;
-        cout<<string(Team1.TeamName.size()+20, '-')<<Team2.TeamName<<"scored !\n";
+        cout<<string(Team1.Name.size()+20, '-')<<Team2.Name<<"scored !\n";
     }
 
    if(Rounds<GameRounds)
    {
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
-       cout<<string((Team1.TeamName.size()+Team2.TeamName.size()+4)/4, ' ')<<"SCORE\n";
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
-       cout<<" "<<Team1.TeamName<<"  "<<Team2.TeamName<<" \n";
-       cout<<string(Team1.TeamName.length()/2, ' ')<<Team1.goals<<string((Team1.TeamName.size()+Team2.TeamName.size()/2), ' ')<<Team2.goals<<endl;
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
+       cout<<string((Team1.Name.size()+Team2.Name.size()+4)/4, ' ')<<"SCORE\n";
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
+       cout<<" "<<Team1.Name<<"  "<<Team2.Name<<" \n";
+       cout<<string(Team1.Name.length()/2, ' ')<<Team1.goals<<string((Team1.Name.size()+Team2.Name.size()/2), ' ')<<Team2.goals<<endl;
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
 
 
    }
 
    else if (Rounds==GameRounds)
     {
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
-       cout<<string((Team1.TeamName.size()+Team2.TeamName.size()+4)/4, ' ')<<"FINAL SCORE\n";
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
-       cout<<" "<<Team1.TeamName<<"  "<<Team2.TeamName<<" \n";
-       cout<<string(Team1.TeamName.length()/2, ' ')<<Team1.goals<<string((Team1.TeamName.size()+Team2.TeamName.size()/2), ' ')<<Team2.goals<<endl;
-       cout<<string(Team1.TeamName.size()+Team2.TeamName.size()+4, '-')<<"\n";
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
+       cout<<string((Team1.Name.size()+Team2.Name.size()+4)/4, ' ')<<"FINAL SCORE\n";
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
+       cout<<" "<<Team1.Name<<"  "<<Team2.Name<<" \n";
+       cout<<string(Team1.Name.length()/2, ' ')<<Team1.goals<<string((Team1.Name.size()+Team2.Name.size()/2), ' ')<<Team2.goals<<endl;
+       cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
     }
 
 
