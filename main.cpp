@@ -30,7 +30,7 @@ int main()
         Game.RunTurn(DimX,DimY,GameRounds);
 
         cout<<"Press Enter to continue\n";
-        cout<<"---------------------------\n---------------------------\n\n\n";
+        cout<<string(20,'-')<<"\n"<<string(20, '-')<<"\n\n\n";
         cin.ignore();
         for(i=0; i++; i<=5){
             for(j=0; j++; j<=5){
@@ -41,7 +41,7 @@ int main()
 
 
     while ( Game.Rounds < GameRounds ) ;
-    cout<<"---------------------------\n    GAME OVER      \n---------------------------\n";
+    cout<<string(20,' ')<<"\n"<<string(7,' ')<<"Game Over"<<"\n"<<string(20,' ');
 
     return 0 ;
 }
