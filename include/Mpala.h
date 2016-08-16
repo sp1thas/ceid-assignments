@@ -7,8 +7,8 @@ class Mpala
     public:
         Mpala();
 
-        int MX ; // syntetagmenh x ths mpalas
-        int MY ;  // syntetagmenh y ths mpalas
+        int AxisX ; // syntetagmenh x ths mpalas
+        int AxisY ;  // syntetagmenh y ths mpalas
 
         Paikths *trexwn;
         Paikths *prwhn ;

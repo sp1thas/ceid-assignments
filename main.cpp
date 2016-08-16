@@ -32,14 +32,8 @@ int main()
         cout<<"Press Enter to continue\n";
         cout<<string(20,'-')<<"\n"<<string(20, '-')<<"\n\n\n";
         cin.ignore();
-        for(i=0; i++; i<=5){
-            for(j=0; j++; j<=5){
-                cout<<"--\n|  |\n--";
-            }
-        }
+        
    }
-
-
     while ( Game.Rounds < GameRounds ) ;
     cout<<string(20,' ')<<"\n"<<string(7,' ')<<"Game Over"<<"\n"<<string(20,' ');
 

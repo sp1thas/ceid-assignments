@@ -11,11 +11,11 @@ Paikths::Paikths()
 
 {
 
-        PY= rand() % 6  ;
+        AxisY= rand() % 6  ;
         int arithmosfan = rand() % 100 ;
 
         cout<<"Insert player's name\n-> ";
-        cin>>PlayerName;
+        cin>>Name;
 
 }
 
@@ -23,10 +23,10 @@ int Paikths :: Metakinhsh (int PX , int DimX) {
 
 
      {
-        PX=rand() % DimX ; //tyxaia metakinhsh ston aksona x
+        AxisX=rand() % DimX ; //tyxaia metakinhsh ston aksona x
     }
 
-    cout<<"Player moving.. His current coordinates are: "<<PX <<", " <<PY<<endl;
+    cout<<"Player moving.. His current coordinates are: "<<AxisX <<", "<<AxisY<<endl;
 
     return 0 ;
 };

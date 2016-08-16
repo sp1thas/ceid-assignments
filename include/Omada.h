@@ -15,7 +15,7 @@ class Omada
     public:
         Omada();
 
-        string TeamName ;
+        string Name ;
         int lathi ;
         int pases ;
         int goals ;
