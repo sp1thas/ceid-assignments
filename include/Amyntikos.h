@@ -1,10 +1,10 @@
 #ifndef AMYNTIKOS_H
 #define AMYNTIKOS_H
 
-#include <Paikths.h>
+#include <Paiktis.h>
 
 
-class Amyntikos : public Paikths
+class Amyntikos : public Paiktis
 {
     public:
         Amyntikos();

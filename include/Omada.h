@@ -1,6 +1,6 @@
 #ifndef OMADA_H
 #define OMADA_H
-#include "Paikths.h"
+#include "Paiktis.h"
 #include <iostream>
 #include "Paixnidi.h"
 #include "Mpala.h"
@@ -20,7 +20,7 @@ class Omada
         int pases ;
         int goals ;
 
-        Paikths Paik[3]; //Pinakas me 3 antikeimena ths klass paikths
+        Paiktis Paik[3]; //Pinakas me 3 antikeimena ths klass Paiktis
 
         int Action ( int DimX , Mpala M);
 

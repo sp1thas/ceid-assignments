@@ -38,15 +38,15 @@
 		<Unit filename="include/Epithetikos.h" />
 		<Unit filename="include/Mpala.h" />
 		<Unit filename="include/Omada.h" />
-		<Unit filename="include/Paikths.h" />
+		<Unit filename="include/Paiktis.h" />
 		<Unit filename="include/Paixnidi.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Amyntikos.cpp" />
 		<Unit filename="src/Epithetikos.cpp" />
 		<Unit filename="src/Mpala.cpp" />
 		<Unit filename="src/Omada.cpp" />
-		<Unit filename="src/Paikths.cpp" />
 		<Unit filename="src/Paixnidi.cpp" />
+		<Unit filename="src/Paiktis.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

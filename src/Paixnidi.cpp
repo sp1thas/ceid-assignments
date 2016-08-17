@@ -1,5 +1,5 @@
 #include "Paixnidi.h"
-#include "Paikths.h"
+#include "Paiktis.h"
 #include "Mpala.h"
 #include "Omada.h"
 #include <iostream>
@@ -76,8 +76,6 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
             if(i==M.AxisX && j==M.AxisY){
                     BallPos = j;
             }
-
-
         }
         if (BallPos > -1){
             for(k=0; k<BallPos; k++){

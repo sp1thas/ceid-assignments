@@ -1,6 +1,6 @@
 #ifndef MPALA_H
 #define MPALA_H
-#include "Paikths.h"
+#include "Paiktis.h"
 
 class Mpala
 {
@@ -10,10 +10,10 @@ class Mpala
         int AxisX ; // syntetagmenh x ths mpalas
         int AxisY ;  // syntetagmenh y ths mpalas
 
-        Paikths *trexwn;
-        Paikths *prwhn ;
+        Paiktis *trexwn;
+        Paiktis *prwhn ;
 
-        int Anathesh (Paikths P, Mpala M) ; //klhsh ths synarthshs anatheshs
+        int Anathesh (Paiktis P, Mpala M) ; //klhsh ths synarthshs anatheshs
 
 };
 

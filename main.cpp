@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Paixnidi.h"
-#include "Paikths.h"
+#include "Paiktis.h"
 #include "Mpala.h"
 #include "Omada.h"
 #include <cstdlib>
@@ -32,7 +32,7 @@ int main()
         cout<<"Press Enter to continue\n";
         cout<<string(20,'-')<<"\n"<<string(20, '-')<<"\n\n\n";
         cin.ignore();
-        
+
    }
     while ( Game.Rounds < GameRounds ) ;
     cout<<string(20,' ')<<"\n"<<string(7,' ')<<"Game Over"<<"\n"<<string(20,' ');

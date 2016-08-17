@@ -1,6 +1,6 @@
 #include "Omada.h"
 #include "Paixnidi.h"
-#include "Paikths.h"
+#include "Paiktis.h"
 #include "Mpala.h"
 #include <cstdlib>
 #include <iostream>

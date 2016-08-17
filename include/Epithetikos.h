@@ -1,10 +1,10 @@
 #ifndef EPITHETIKOS_H
 #define EPITHETIKOS_H
 
-#include <Paikths.h>
+#include <Paiktis.h>
 
 
-class Epithetikos : public Paikths
+class Epithetikos : public Paiktis
 {
     public:
         Epithetikos();

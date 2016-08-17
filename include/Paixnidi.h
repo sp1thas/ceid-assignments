@@ -2,7 +2,7 @@
 #define PAIXNIDI_H
 #include <iostream>
 #include "Paixnidi.h"
-#include "Paikths.h"
+#include "Paiktis.h"
 #include "Mpala.h"
 #include "Omada.h"
 #include <cstdlib>
