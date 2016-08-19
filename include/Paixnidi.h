@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Paixnidi.h
+    Purpose: Paixnidi header file
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #ifndef PAIXNIDI_H
 #define PAIXNIDI_H
 #include <iostream>

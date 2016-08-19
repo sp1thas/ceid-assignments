@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Paiktis.h
+    Purpose: Paiktis header file
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #ifndef PAIKTIS_H
 #define PAIKTIS_H
 #include <string>

@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Mpala.h
+    Purpose: Mpala header file
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #ifndef MPALA_H
 #define MPALA_H
 #include "Paiktis.h"

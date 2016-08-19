@@ -1,3 +1,9 @@
+/**
+    Footbal Game
+    Paixnidi.cpp
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #include "Paixnidi.h"
 #include "Paiktis.h"
 #include "Mpala.h"

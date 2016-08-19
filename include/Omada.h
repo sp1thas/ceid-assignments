@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Omada.h
+    Purpose: Omada header file
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #ifndef OMADA_H
 #define OMADA_H
 #include "Paiktis.h"

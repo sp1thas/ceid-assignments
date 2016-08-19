@@ -1,10 +1,11 @@
-/* ---------------------------------------------------------------------------
-** Ylopoihsh enos aplou podosfairikou paixnidiou sthn konsola
-**
-** main.cpp
-**
-** Author: Simakis Panagiotis
-** -------------------------------------------------------------------------*/
+/**
+    Footbal Game
+    main.cpp
+    Purpose:
+
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #include <iostream>
 #include "Paixnidi.h"
 #include "Paiktis.h"

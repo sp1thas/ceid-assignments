@@ -1,3 +1,9 @@
+/**
+    Footbal Game
+    Omada.cpp
+    @author Simakis Panagiotis
+    @version 1.1 19/08/16
+*/
 #include "Omada.h"
 #include "Paixnidi.h"
 #include "Paiktis.h"
