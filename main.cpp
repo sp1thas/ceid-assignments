@@ -1,3 +1,10 @@
+/* ---------------------------------------------------------------------------
+** Ylopoihsh enos aplou podosfairikou paixnidiou sthn konsola
+**
+** main.cpp
+**
+** Author: Simakis Panagiotis
+** -------------------------------------------------------------------------*/
 #include <iostream>
 #include "Paixnidi.h"
 #include "Paiktis.h"
