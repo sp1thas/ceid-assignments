@@ -1,0 +1,81 @@
+# depslib dependency file v1.0
+1461581829 source:/home/spithas/Dropbox/football-game/src/Amyntikos.cpp
+	"Amyntikos.h"
+
+1471385123 /home/spithas/Dropbox/football-game/include/Amyntikos.h
+	<Paiktis.h>
+
+1471384962 /home/spithas/Dropbox/football-game/include/Paikths.h
+	<string>
+	<iostream>
+	<cstdlib>
+
+1461581793 source:/home/spithas/Dropbox/football-game/src/Epithetikos.cpp
+	"Epithetikos.h"
+
+1471384922 /home/spithas/Dropbox/football-game/include/Epithetikos.h
+	<Paiktis.h>
+
+1471385154 source:/home/spithas/Dropbox/football-game/src/Mpala.cpp
+	"Mpala.h"
+	"Paixnidi.h"
+	"Paiktis.h"
+	<iostream>
+	<cstdlib>
+
+1471384979 /home/spithas/Dropbox/football-game/include/Mpala.h
+	"Paiktis.h"
+
+1471385105 /home/spithas/Dropbox/football-game/include/Paixnidi.h
+	<iostream>
+	"Paixnidi.h"
+	"Paiktis.h"
+	"Mpala.h"
+	"Omada.h"
+	<cstdlib>
+
+1471385039 /home/spithas/Dropbox/football-game/include/Omada.h
+	"Paiktis.h"
+	<iostream>
+	"Paixnidi.h"
+	"Mpala.h"
+	"Omada.h"
+	<cstdlib>
+
+1471380000 source:/home/spithas/Dropbox/football-game/src/Paikths.cpp
+	"Paikths.h"
+	"Mpala.h"
+	"Paixnidi.h"
+	"Omada.h"
+	<iostream>
+	<cstdlib>
+
+1471385112 source:/home/spithas/Dropbox/football-game/main.cpp
+	<iostream>
+	"Paixnidi.h"
+	"Paiktis.h"
+	"Mpala.h"
+	"Omada.h"
+	<cstdlib>
+
+1471385143 source:/home/spithas/Dropbox/football-game/src/Omada.cpp
+	"Omada.h"
+	"Paixnidi.h"
+	"Paiktis.h"
+	"Mpala.h"
+	<cstdlib>
+	<iostream>
+
+1471385200 source:/home/spithas/Dropbox/football-game/src/Paixnidi.cpp
+	"Paixnidi.h"
+	"Paiktis.h"
+	"Mpala.h"
+	"Omada.h"
+	<iostream>
+	<string.h>
+
+1471384962 /home/spithas/Dropbox/football-game/include/Paiktis.h
+	<string>
+	<iostream>
+	<cstdlib>
+
