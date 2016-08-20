@@ -56,7 +56,7 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
    if(Rounds<GameRounds)
    {
        cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
-       cout<<string((Team1.Name.size()+Team2.Name.size()+4)/4, ' ')<<"SCORE\n";
+       cout<<string((Team1.Name.size()+Team2.Name.size()+4)/4, ' ')<<"\nSCORE\n";
        cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
        cout<<" "<<Team1.Name<<"  "<<Team2.Name<<" \n";
        cout<<string(Team1.Name.length()/2, ' ')<<Team1.goals<<string((Team1.Name.size()+Team2.Name.size()/2), ' ')<<Team2.goals<<endl;
@@ -84,11 +84,11 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
             }
         }
         if (BallPos > -1){
-            for(k=0; k<BallPos; k++){
+            for(k=1; k<BallPos; k++){
                 cout<<":   ";
             }
             cout<<": * :";
-            for(k=BallPos+1; k<DimY; k++){
+            for(k=BallPos; k<DimY; k++){
                 cout<<"   :";
             }
             cout<<"\n";

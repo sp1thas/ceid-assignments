@@ -25,7 +25,7 @@ Paiktis::Paiktis()
 
 }
 
-int Paiktis :: Metakinhsh (int PX , int DimX) {
+int Paiktis :: Metakinhsh (int AxisX , int DimX) {
 
 
      {
