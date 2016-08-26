@@ -1,14 +1,17 @@
 # Exercises on Minix OS
 
-## 4 exercises on Minix OS
+Tree projects about modification of Minix Kenrel and a simple bash program. 
 
-#### Tools:
+## Prerequirements
 
-![](http://wiki.minix3.org/lib/tpl/minix3c/images/main-logo.png)
+Minix OS running on virtual machine:
 
-![](https://tiswww.case.edu/php/chet/img/bash-logo-web.png)
+* Minix OS
 
-![](https://eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-426x100.png)
+* VirtualBox\/VMWare Player
+
+* Bash
+* Eclipse \(Optional\)
 
 
 
@@ -18,6 +21,4 @@
 | **minix kernel changes 1 ** | changes on kernel of minix3 |
 | **minix kernel changes 2** | changes on kernel of minix3 |
 | **minix theoritical exercise** | about the filesystem of minix\/\*nix |
-
-
 
