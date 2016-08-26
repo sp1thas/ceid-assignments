@@ -1,6 +1,6 @@
 # Exercises on Minix OS
 
-Tree projects about modification of Minix Kenrel and a simple bash program. 
+Tree projects about modification of Minix Kernel and a simple bash program.
 
 ## Prerequirements
 
@@ -11,9 +11,8 @@ Minix OS running on virtual machine:
 * VirtualBox\/VMWare Player
 
 * Bash
+
 * Eclipse \(Optional\)
-
-
 
 | exercise | object |
 | --- | --- |
