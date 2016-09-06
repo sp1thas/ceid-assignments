@@ -11,12 +11,12 @@ AR = ar
 LD = g++
 WINDRES = windres
 
-INC = 
+INC =
 CFLAGS = -Wall -fexceptions
-RESINC = 
-LIBDIR = 
-LIB = 
-LDFLAGS = 
+RESINC =
+LIBDIR =
+LIB =
+LDFLAGS =
 
 INC_DEBUG = $(INC) -Iinclude
 CFLAGS_DEBUG = $(CFLAGS) -g
@@ -26,7 +26,7 @@ LIBDIR_DEBUG = $(LIBDIR)
 LIB_DEBUG = $(LIB)
 LDFLAGS_DEBUG = $(LDFLAGS)
 OBJDIR_DEBUG = obj/Debug
-DEP_DEBUG = 
+DEP_DEBUG =
 OUT_DEBUG = bin/Debug/football-game
 
 INC_RELEASE = $(INC) -Iinclude
@@ -37,8 +37,8 @@ LIBDIR_RELEASE = $(LIBDIR)
 LIB_RELEASE = $(LIB)
 LDFLAGS_RELEASE = $(LDFLAGS) -s
 OBJDIR_RELEASE = obj/Release
-DEP_RELEASE = 
-OUT_RELEASE = bin/Release/football-game
+DEP_RELEASE =
+OUT_RELEASE = cplusplus-footballgame
 
 OBJ_DEBUG = $(OBJDIR_DEBUG)/main.o $(OBJDIR_DEBUG)/src/Amyntikos.o $(OBJDIR_DEBUG)/src/Epithetikos.o $(OBJDIR_DEBUG)/src/Mpala.o $(OBJDIR_DEBUG)/src/Omada.o $(OBJDIR_DEBUG)/src/Paixnidi.o $(OBJDIR_DEBUG)/src/Paiktis.o
 
@@ -48,12 +48,12 @@ all: debug release
 
 clean: clean_debug clean_release
 
-before_debug: 
+before_debug:
 	test -d bin/Debug || mkdir -p bin/Debug
 	test -d $(OBJDIR_DEBUG) || mkdir -p $(OBJDIR_DEBUG)
 	test -d $(OBJDIR_DEBUG)/src || mkdir -p $(OBJDIR_DEBUG)/src
 
-after_debug: 
+after_debug:
 
 debug: before_debug out_debug after_debug
 
@@ -81,18 +81,18 @@ $(OBJDIR_DEBUG)/src/Paixnidi.o: src/Paixnidi.cpp
 $(OBJDIR_DEBUG)/src/Paiktis.o: src/Paiktis.cpp
 	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c src/Paiktis.cpp -o $(OBJDIR_DEBUG)/src/Paiktis.o
 
-clean_debug: 
+clean_debug:
 	rm -f $(OBJ_DEBUG) $(OUT_DEBUG)
 	rm -rf bin/Debug
 	rm -rf $(OBJDIR_DEBUG)
 	rm -rf $(OBJDIR_DEBUG)/src
 
-before_release: 
+before_release:
 	test -d bin/Release || mkdir -p bin/Release
 	test -d $(OBJDIR_RELEASE) || mkdir -p $(OBJDIR_RELEASE)
 	test -d $(OBJDIR_RELEASE)/src || mkdir -p $(OBJDIR_RELEASE)/src
 
-after_release: 
+after_release:
 
 release: before_release out_release after_release
 
@@ -120,11 +120,10 @@ $(OBJDIR_RELEASE)/src/Paixnidi.o: src/Paixnidi.cpp
 $(OBJDIR_RELEASE)/src/Paiktis.o: src/Paiktis.cpp
 	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c src/Paiktis.cpp -o $(OBJDIR_RELEASE)/src/Paiktis.o
 
-clean_release: 
+clean_release:
 	rm -f $(OBJ_RELEASE) $(OUT_RELEASE)
 	rm -rf bin/Release
 	rm -rf $(OBJDIR_RELEASE)
 	rm -rf $(OBJDIR_RELEASE)/src
 
 .PHONY: before_debug after_debug clean_debug before_release after_release clean_release
-

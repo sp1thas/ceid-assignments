@@ -20,8 +20,11 @@ Paiktis::Paiktis()
         AxisY= rand() % 6  ;
         int arithmosfan = rand() % 100 ;
 
-        cout<<"Insert player's name\n-> ";
-        cin>>Name;
+        cout<<"Insert player's name [default name: xasogoalis{id}]\n-> ";
+        getline(cin, Name);
+        if (Name.empty()){
+          Name = "Xasogoalis" + AxisY;
+        }
 
 }
 

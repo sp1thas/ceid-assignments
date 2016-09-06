@@ -18,8 +18,13 @@ using namespace std;
 int main()
 {
     int GameRounds ;
-    cout <<"Insert the number of rounds\n-> ";
-    cin>>GameRounds ;
+    cout <<"Insert the number of rounds [Default: 10]\n-> ";
+    if (cin.get() == '\n'){
+      GameRounds = 10;
+    }
+    else{
+        cin >> GameRounds;
+    }
 
     int DimX = 6 ; // Oria toy ghpedoy
     int DimY = 6 ;
