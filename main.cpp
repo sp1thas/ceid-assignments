@@ -18,10 +18,10 @@ using namespace std;
 int main()
 {
     int GameRounds ;
-    cout <<"Insert the number of rounds [Default: 10]\n-> ";
+    cout <<"Insert the number of rounds\n-> ";
     // an o xrhsths dwsei enter tha paixtoun 10 gyroi by dev
     cin>>GameRounds;
-    
+
     // tis diastaseis tou ghpedou tis orizoyme san statheres
     const int DimX = 9 ; // Oria toy ghpedoy
     const int DimY = 6 ;

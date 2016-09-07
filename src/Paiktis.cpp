@@ -16,7 +16,7 @@ using namespace std;
 Paiktis::Paiktis()
 
 {
-
+        
         AxisY= rand() % 6  ;
         int arithmosfan = rand() % 100 ;
 
