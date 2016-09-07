@@ -27,7 +27,7 @@ class Omada
         int pases ;
         int goals ;
 
-        Paiktis Paik[3]; //Pinakas me 3 antikeimena ths klass Paiktis
+        Paiktis Paik[4]; //Pinakas me 4 antikeimena ths class Paiktis
 
         int Action ( int DimX , Mpala M);
 

@@ -19,15 +19,12 @@ int main()
 {
     int GameRounds ;
     cout <<"Insert the number of rounds [Default: 10]\n-> ";
-    if (cin.get() == '\n'){
-      GameRounds = 10;
-    }
-    else{
-        cin >> GameRounds;
-    }
-
-    int DimX = 6 ; // Oria toy ghpedoy
-    int DimY = 6 ;
+    // an o xrhsths dwsei enter tha paixtoun 10 gyroi by dev
+    cin>>GameRounds;
+    
+    // tis diastaseis tou ghpedou tis orizoyme san statheres
+    const int DimX = 9 ; // Oria toy ghpedoy
+    const int DimY = 6 ;
     int i,j;
     cout << "Playing field dimensions: " << DimX << " x " << DimY << endl;
 

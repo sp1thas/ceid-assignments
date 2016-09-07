@@ -52,7 +52,7 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
         Team2.goals++;
         cout<<string(Team1.Name.size()+20, '-')<<Team2.Name<<"scored !\n";
     }
-
+    // ektypwsh toy score gyrou
    if(Rounds<GameRounds)
    {
        cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
@@ -64,7 +64,7 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
 
 
    }
-
+   // ektypwsh toy telikou score
    else if (Rounds==GameRounds)
     {
        cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
@@ -74,6 +74,7 @@ if ((M.AxisX==(DimX/2)||M.AxisX==((DimX/2)+1))&&(M.AxisY==1))
        cout<<string(Team1.Name.length()/2, ' ')<<Team1.goals<<string((Team1.Name.size()+Team2.Name.size()/2), ' ')<<Team2.goals<<endl;
        cout<<string(Team1.Name.size()+Team2.Name.size()+4, '-')<<"\n";
     }
+    // ektypwsh toy xarth
     for (i=0; i<=DimX; i++){
         cout<<string(DimY*5-5, '.')<<"\n";
         BallPos = -1;
