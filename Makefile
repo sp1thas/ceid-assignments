@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------#
-# 			Simakis Panagiotis		simakis@ceid.upatras.gr                    #
+# 	Simakis Panagiotis		simakis@ceid.upatras.gr
 #------------------------------------------------------------------------------#
 
 
@@ -38,7 +38,7 @@ LIB_RELEASE = $(LIB)
 LDFLAGS_RELEASE = $(LDFLAGS) -s
 OBJDIR_RELEASE = obj/Release
 DEP_RELEASE =
-OUT_RELEASE = cplusplus-footballgame
+OUT_RELEASE = cplusplus-footballgame_linux
 
 OBJ_DEBUG = $(OBJDIR_DEBUG)/main.o $(OBJDIR_DEBUG)/src/Amyntikos.o $(OBJDIR_DEBUG)/src/Epithetikos.o $(OBJDIR_DEBUG)/src/Mpala.o $(OBJDIR_DEBUG)/src/Omada.o $(OBJDIR_DEBUG)/src/Paixnidi.o $(OBJDIR_DEBUG)/src/Paiktis.o
 
