@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Omada.cpp
+    Purpose: Ylopoihsh ths klashs Omada kai twn methodwn ths
+    @author Simakis Panagiotis
+    @version 1.2 08/09/2016
+*/
 #include "Omada.h"
 #include "Paixnidi.h"
 #include "Paiktis.h"
@@ -9,36 +16,40 @@ using namespace std;
 
 Omada::Omada()
 {
-
-cout<<"Insert the name of your team\n->  "<<endl;
-        cin>>Name ;
-        cout<<"Your team's name:  "<<Name <<endl;
+  // constractor ths omadas opou zhteitai to onoma ths omadas
+  cout<<"Insert the name of your team [Default Name: Edesaikos]\n->  ";
+  getline(cin, Name);
+  // orizoume mia default timh otan o xrhsths dwsei enter
+  if (Name.empty()){
+    Name = "Edesaikos";
+  }
+  cout<<"Your team's name: "<<Name <<endl;
 }
 
-
-int Omada ::Action (int DimX , Mpala M){
-    cout<<"Game starting!"<<endl;
-    for (int i=0 ; i=2 ; i ++ ){
+// methodos Action
+int Omada ::Action (int DimX , Mpala Ball){
+    cout<<"Game starting!\n";
+    // h methodos action ekteleitai gia olous tous paiktes kathe omadas
+    for (int i=0 ; i=3 ; i ++ ){
       int x = rand() % 100 ; //tyxaios arithmos ews 100 gia na prosomeiwsoume tis pithanothtes
-      M.Anathesh(Paik[i],M); //kaloume thn synarthsh anatheshs gia kathe paikth
-
-      if (x>70) {
-        cout<<"Moving"<<endl;
+      // me 35% pithanotita tha ginei metakinisi
+      if ((x<=34) && (x>=0)) {
+        cout<<"Moving\n";
         Paik[i].Metakinhsh(3,DimX);
         break;
       }
-
-      else if (x>35) {
-        cout<<"Transfer"<<endl;
+      // me 35% pithanothta tha ginei metavivash
+      else if ((x>=35) && (x<=69)) {
+        cout<<"Transfer\n";
         Paik[i].Metabibash();
         break;
       }
-
+      // me 30% pithanotita tha ginei eidiki kinhsh
       else {
-        cout<<"Special move"<<endl;
+        cout<<"Special move\n";
         Paik[i].EidikhKin();
         break;
       }
-
+      Ball.Anathesh(Paik[i],Ball); //kaloume thn synarthsh anatheshs gia kathe paikth
     }
 };

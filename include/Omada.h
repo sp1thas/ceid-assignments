@@ -1,3 +1,10 @@
+/**
+    Footbal Game
+    Omada.h
+    Purpose: Omada header file
+    @author Simakis Panagiotis
+    @version 1.2 08/09/2016
+*/
 #ifndef OMADA_H
 #define OMADA_H
 #include "Paiktis.h"
@@ -16,11 +23,9 @@ class Omada
         Omada();
 
         string Name ;
-        int lathi ;
-        int pases ;
-        int goals ;
-
-        Paiktis Paik[3]; //Pinakas me 3 antikeimena ths klass Paiktis
+        int Lathi, Pases, Goals;
+        // Pinakas me tessera antikeimena klasshs Paikth
+        Paiktis Paik[4];
 
         int Action ( int DimX , Mpala M);
 
