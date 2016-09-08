@@ -1,8 +1,7 @@
 /**
     Footbal Game
     Amyntikos.cpp
-    Purpose: 
-
+    Purpose: Ylopoihsh ths klashs Amyntikos kai twn methodwn ths
     @author Simakis Panagiotis
     @version 1.1 19/08/16
 */

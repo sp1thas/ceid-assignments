@@ -21,8 +21,10 @@ class Paixnidi
 
         Paixnidi(); //
 
-        int Rounds,i,j ;
+        int Rounds ;
         int RunTurn ( int DimX,int DimY,int Rounds) ;
+    private:
+        int i,j;
 };
 
 #endif

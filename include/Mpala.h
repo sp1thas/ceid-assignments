@@ -20,7 +20,7 @@ class Mpala
         Paiktis *trexwn;
         Paiktis *prwhn ;
 
-        int Anathesh (Paiktis P, Mpala M) ; //klhsh ths synarthshs anatheshs
+        int Anathesh (Paiktis P, Mpala M) ;
 
 };
 

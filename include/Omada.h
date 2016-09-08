@@ -23,11 +23,9 @@ class Omada
         Omada();
 
         string Name ;
-        int lathi ;
-        int pases ;
-        int goals ;
-
-        Paiktis Paik[4]; //Pinakas me 4 antikeimena ths class Paiktis
+        int Lathi, Pases, Goals;
+        // Pinakas me tessera antikeimena klasshs Paikth
+        Paiktis Paik[4];
 
         int Action ( int DimX , Mpala M);
 

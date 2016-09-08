@@ -1,8 +1,7 @@
 /**
     Footbal Game
     Epithetikos.cpp
-    Purpose: 
-
+    Purpose: Ylopoihsh ths klashs Epithetikos kai twn methodwn ths
     @author Simakis Panagiotis
     @version 1.1 19/08/16
 */

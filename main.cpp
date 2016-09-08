@@ -1,8 +1,7 @@
 /**
     Footbal Game
     main.cpp
-    Purpose:
-
+    Purpose: H main tou programmatos
     @author Simakis Panagiotis
     @version 1.1 19/08/16
 */
@@ -12,7 +11,6 @@
 #include "Mpala.h"
 #include "Omada.h"
 #include <cstdlib>
-
 using namespace std;
 
 int main()
@@ -27,11 +25,12 @@ int main()
     const int DimY = 6 ;
     int i,j;
     cout << "Playing field dimensions: " << DimX << " x " << DimY << endl;
-
-    Paixnidi Game; //dimiourgia antikeimenou
+    // Dhmiourgia antikeimenou Paixnidiou
+    Paixnidi Game;
     Game.Rounds = 0 ;
-
+    // Dhmiourgia antikeimenou mpalas
     Mpala M;
+
     do {   //domh epanalhpshss gia thn ektelesh ths run turn
 
         Game.Rounds += 1 ;
@@ -45,7 +44,8 @@ int main()
 
    }
     while ( Game.Rounds < GameRounds ) ;
-    cout<<string(20,' ')<<"\n"<<string(7,' ')<<"Game Over"<<"\n"<<string(20,' ');
 
+    // ektpwsh tou katallhlou mhnymatos otan to paixnidi teleiwsei
+    cout<<string(20,' ')<<"\n"<<string(7,' ')<<"Game Over"<<"\n"<<string(20,' ');
     return 0 ;
 }

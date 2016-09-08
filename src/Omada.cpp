@@ -1,6 +1,7 @@
 /**
     Footbal Game
     Omada.cpp
+    Purpose: Ylopoihsh ths klashs Omada kai twn methodwn ths
     @author Simakis Panagiotis
     @version 1.1 19/08/16
 */
@@ -25,30 +26,30 @@ Omada::Omada()
   cout<<"Your team's name: "<<Name <<endl;
 }
 
-
-int Omada ::Action (int DimX , Mpala M){
-    cout<<"Game starting!"<<endl;
+// methodos Action
+int Omada ::Action (int DimX , Mpala Ball){
+    cout<<"Game starting!\n";
     // h methodos action ekteleitai gia olous tous paiktes kathe omadas
     for (int i=0 ; i=3 ; i ++ ){
       int x = rand() % 100 ; //tyxaios arithmos ews 100 gia na prosomeiwsoume tis pithanothtes
       // me 35% pithanotita tha ginei metakinisi
       if ((x<=34) && (x>=0)) {
-        cout<<"Moving"<<endl;
+        cout<<"Moving\n";
         Paik[i].Metakinhsh(3,DimX);
         break;
       }
       // me 35% pithanothta tha ginei metavivash
       else if ((x>=35) && (x<=69)) {
-        cout<<"Transfer"<<endl;
+        cout<<"Transfer\n";
         Paik[i].Metabibash();
         break;
       }
       // me 30% pithanotita tha ginei eidiki kinhsh
       else {
-        cout<<"Special move"<<endl;
+        cout<<"Special move\n";
         Paik[i].EidikhKin();
         break;
       }
-      M.Anathesh(Paik[i],M); //kaloume thn synarthsh anatheshs gia kathe paikth
+      Ball.Anathesh(Paik[i],Ball); //kaloume thn synarthsh anatheshs gia kathe paikth
     }
 };
