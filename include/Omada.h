@@ -3,7 +3,7 @@
     Omada.h
     Purpose: Omada header file
     @author Simakis Panagiotis
-    @version 1.1 19/08/16
+    @version 1.2 08/09/2016
 */
 #ifndef OMADA_H
 #define OMADA_H

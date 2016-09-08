@@ -3,7 +3,7 @@
     Paiktis.h
     Purpose: Paiktis header file
     @author Simakis Panagiotis
-    @version 1.1 19/08/16
+    @version 1.2 08/09/2016
 */
 #ifndef PAIKTIS_H
 #define PAIKTIS_H

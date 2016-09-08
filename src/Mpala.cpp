@@ -3,7 +3,7 @@
     Mpala.cpp
     Purpose: Ylopoihsh ths klashs Mpala kai twn methodwn ths
     @author Simakis Panagiotis
-    @version 1.1 19/08/16
+    @version 1.2 08/09/2016
 */
 #include "Mpala.h"
 #include "Paixnidi.h"

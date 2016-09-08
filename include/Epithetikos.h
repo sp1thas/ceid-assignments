@@ -3,7 +3,7 @@
     Epithetikos.h
     Purpose: Epithetikos header file
     @author Simakis Panagiotis
-    @version 1.1 19/08/16
+    @version 1.2 08/09/2016
 */
 #ifndef EPITHETIKOS_H
 #define EPITHETIKOS_H
