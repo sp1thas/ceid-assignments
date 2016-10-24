@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from nltk.corpus import wordnet as wn 	#Εισαγωγή βιβλιοθήκης
 
 a=wn.synsets('dog')		#|
@@ -14,7 +15,7 @@ i=wn.synset('human.n.01').definition
 
 print a		#|
 print b		#|
-print c		#|	
+print c		#|
 print d		#|
 print e		#|Εκτύπωση των synset με το ορισμό της έννοιας
 print f		#|

@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
 import nltk		#Εισαγωγή NLTK
-from nltk.tag import pos_tag	#Εισαγωγή της pos_tag	
+from nltk.tag import pos_tag	#Εισαγωγή της pos_tag
 from nltk.corpus import brown	#Εισαγωγή bronw
 from nltk.tag import pos_tag
 
@@ -9,6 +10,6 @@ tagged_sent = pos_tag(text.split()) 	#Χωρίζουμε και βρισκουμ
 propernouns = [word for word,pos in tagged_sent if  pos=='NN']		#Διαλέγουμε τα ουσιαστηκά του κειμένου
 
 
-for i in propernouns:	
+for i in propernouns:
 	if text.count(i) == 1:
 		print i		#Τυπώνουμε την λίστα των μοναδικών λημμάτων των ουσιαστηκών του κειμένου

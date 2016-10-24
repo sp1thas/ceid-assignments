@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import nltk #Εισάγουμε το NLTK
 
 print ("Εισάγετε το κείμενο")

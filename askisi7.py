@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import re	#Εισαγωγή βιβλιοθηκών απο το NLTK
 from nltk.stem import SnowballStemmer as KK
 
@@ -26,4 +27,3 @@ output.sort(key=lambda x: (-x[1],x[0]))		#Εξοδος όπου η ταξινό�
 
 for item in output:
     print '%s:%d (Root: %s)' % item
-
