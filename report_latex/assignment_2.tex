@@ -1,28 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Programming/Coding Assignment
-% LaTeX Template
-%
-% This template has been downloaded from:
-% http://www.latextemplates.com
-%
-% Original author:
-% Ted Pavlic (http://www.tedpavlic.com)
-%
-% Note:
-% The \lipsum[#] commands throughout this template generate dummy text
-% to fill the template out. These commands should all be removed when 
-% writing assignment content.
-%
-% This template uses a Perl script as an example snippet of code, most other
-% languages are also usable. Configure them in the "CODE INCLUSION 
-% CONFIGURATION" section.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{article}
 \usepackage{dirtree}
 \usepackage{graphicx} % Allows including images
@@ -71,7 +46,7 @@
         keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
         keywordstyle=[2]\color{Purple}, % Perl function arguments purple
         keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
-        identifierstyle=, % Nothing special about identifiers                                         
+        identifierstyle=, % Nothing special about identifiers
         commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
         stringstyle=\color{Purple}, % Strings are purple
         showstringspaces=false, % Don't put marks in string spaces
@@ -100,10 +75,6 @@
 \end{itemize}
 }
 
-%----------------------------------------------------------------------------------------
-%	DOCUMENT STRUCTURE COMMANDS
-%	Skip this unless you know what you're doing
-%----------------------------------------------------------------------------------------
 
 % Header and footer for when a page split occurs within a problem environment
 \newcommand{\enterProblemHeader}[1]{
@@ -142,9 +113,6 @@
 \enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
 }
 
-%----------------------------------------------------------------------------------------
-%	NAME AND CLASS SECTION
-%----------------------------------------------------------------------------------------
 
 \newcommand{\hmwkTitle}{Εργασία 2 \selectlanguage{english}(C++)} % Assignment title
 \newcommand{\hmwkDueDate}{7/9/2016} % Due date
@@ -153,9 +121,6 @@
 \newcommand{\hmwkClassInstructor}{} % Teacher/lecturer
 \newcommand{\hmwkAuthorName}{\selectlanguage{greek}Σιμάκης Παναγιώτης} % Your name
 
-%----------------------------------------------------------------------------------------
-%	TITLE PAGE
-%----------------------------------------------------------------------------------------
 
 \title{
 Πανεπιστήμιο Πατρών\\Πολυτεχνική Σχολή\\Τμήμα Μηχανικών Η/Υ και Πληροφορικής\\
@@ -177,7 +142,7 @@
 \newpage
 \chapter{\section{\selectlanguage{greek}\textbf{Σύντομη περιγραφή}}}
 Στην παρούσα υλοποίηση δημιουργήσαμε ένα απλό παιχνίδι προσομοίωσης παιχνιδιού ποδοσφαίρου. Για το παιχνίδι υπάρχουν δύο ομάδες και αυτές με την σειρά τους αποτελούνται από τέσσερις παίκτες. Οι διαστάσεις του γηπέδου είναι ίδες με αυτές που φαίνονται και στην εκφώνηση της άσκησης δηλαδή 6\selectlanguage{english}x\selectlanguage{greek}9. Για τον ορισμό των διαστάσεων χρησιμοποιούμε τις σταθερές τύπου \selectlanguage{english}int \selectlanguage{greek}με όνομα \selectlanguage{english}\texttt{DimX} \selectlanguage{greek} και \selectlanguage{english}\texttt{DimY}.
-\\~\\ 
+\\~\\
 \selectlanguage{greek}
 Κατά την εκίννηση του προγράμματος ζητείται από τον χρήστη να εισάγει τα ονόματα των παικτών της κάθε ομάδας καθώς και το όνομα της ομάδας. Αν ο χρήστης δεν εισάγει κάποιο όνομα στα παραπάνω πεδία τότε θα εισαχθούν οι προεπιλεγμένες τιμές. Τέλος ο χρήστης καλείται να εισάγει τον αριθμό των γύρων του παιχνιδιού. Για να συνεχιστεί το παιχνίδι μετά το τέλος κάθε γύρου ο χρήστης καλείται να εισάγει τον χαρακτήρα αλλαγής γραμμής\selectlanguage{english}(enter)\selectlanguage{greek}. Μετά το τέλος κάθε γύρου στην κονσόλα εμφανίζεται το τρέχον σκορ καθώς και οι ενέργειες που πραγματοποιήθηκαν.
 \\~\\
@@ -213,5 +178,4 @@
 \\~\\
 \chapter{\section{\textbf{\selectlanguage{english}UML}}}
 \includegraphics[width=16cm,keepaspectratio]{uml-c++2}
-%----------------------------------------------------------------------------------------
 \end{document}
