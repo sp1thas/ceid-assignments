@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
-import nltk	#Εισαγωγή του NLTK
-from nltk.corpus import brown	#Εισαγωγή βιβλιοθηκών απο το NLTK
-import sys	#Εισαγωγή sys
-from nltk.book import text1, text2, text3	#Εισαγωγή book
+__author__ = "Simakis Panagiotis"
+__license__ = "GPL"
+__email__ = "sp1thas@autistici.org"
+
+import nltk	# import nltk
+from nltk.corpus import brown
+import sys	# import sys
+from nltk.book import text1, text2, text3
 
 sys.stdout = open('log1.txt', 'w')
 
@@ -19,7 +23,7 @@ for text in the_texts:
 			dic[word] = []
 		dic[word].append(new_entry)
 
-dic2 = [] #Οι λίστες των λιστών
+dic2 = [] # lists of lists
 
 
 

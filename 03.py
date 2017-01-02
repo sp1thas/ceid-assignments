@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+__author__ = "Simakis Panagiotis"
+__license__ = "GPL"
+__email__ = "sp1thas@autistici.org"
+
 import nltk   #Εισαγωγή του NLTK
 
 from urllib import urlopen	#Εισαγωγή του urlopen
