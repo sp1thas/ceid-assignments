@@ -1,8 +1,18 @@
 # NLTK Intro
+![python](https://img.shields.io/badge/Python-3.6%2B-blue) ![black-formatting](https://img.shields.io/badge/Made%20with-Black-black)
 
-Intoduction on Natural Language Processing using Python and specific NLTK.
+Introduction to Natural Language Processing using Python and NLTK.
 
 Basic examples of Natural Language Processing.
+
+## Topics:
+
+ - Tokenization
+ - HTML Parsing
+ - URL Extraction
+ - Part-of-speech tagging
+ - TF/TF-IDF
+ - Wordnet
 
 ## Tools I used:
  - [NLTK](http://www.nltk.org/)
